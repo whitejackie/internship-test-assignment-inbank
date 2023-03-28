@@ -1,0 +1,121 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+main {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #413C3C;
+}
+
+.btn {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    white-space: nowrap;
+}
+
+.btn-primary {
+    color: #FDFDFD;
+    background: #2B0A57;
+    border-color: #2B0A57;
+    width: 300px;
+}
+
+.btn-secondary {
+    color: #2B0A57;
+}
+
+.btn-lg, .btn-group-lg>.btn {
+    padding: 0.625rem 2rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #9C9C9C;
+}
+
+p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@media screen and (max-width: 680px) {
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    .content.grid {
+        grid-template-columns: 1fr;
+    }
+
+    .banner-container {
+        width: 100%;
+        justify-content: center;
+        border-radius: 0 !important;
+    }
+
+    .banner {
+        background-size: cover;
+        min-width: 100%;
+        z-index: 0;
+        padding: 0;
+        border-radius: 0 !important;
+        overflow: hidden;
+        position: absolute;
+        top: -120px;
+    }
+
+    .loan-container {
+        border-radius: 20px;
+        min-width: 100%;
+        background-color: #FDFDFD;
+        margin-top: 200px;
+        z-index: 1;
+        margin-left: auto !important;
+    }
+
+    #modal {
+        z-index: 2;
+        min-width: 100%;
+        min-height: 100%;
+        border-radius: 0;
+    }
+
+    .modal-checkbox {
+        min-height: 20px;
+        min-width: 20px;
+    }
+}
